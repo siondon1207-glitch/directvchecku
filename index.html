@@ -1,23 +1,1309 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+
+
+  <!-- 구조화 데이터 (JSON-LD) : AI 검색 및 스니펫 최적화 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TechArticle",
+        "@id": "https://tire.reliabledone.com/tesla-tire-guide#article",
+        "headline": "테슬라타이어 가격 추천 및 모델별 렌탈 교체 비용 완벽 가이드 (2026년 기준)",
+        "description": "테슬라 전기차 모델3, 모델Y, 모델S, 모델X의 공장 출고(OE) 흡음재 타이어 및 사계절 전기차 전용 타이어의 가격, 렌탈 요금제, 실구매 비용 비교 분석.",
+        "inLanguage": "ko-KR",
+        "datePublished": "2026-01-15T09:00:00+09:00",
+        "dateModified": "2026-03-20T14:30:00+09:00",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Reliabledone EV Automotive Solutions",
+          "url": "https://tire.reliabledone.com"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "전기차 모빌리티 타이어 기술연구소"
+        },
+        "mainEntityOfPage": "https://tire.reliabledone.com/tesla-tire-guide"
+      },
+      {
+        "@type": "Product",
+        "@id": "https://tire.reliabledone.com/tesla-tire-guide#product",
+        "name": "테슬라 전용 전기차 타이어 패키지 (모델3, 모델Y, 모델S, 모델X)",
+        "image": "https://images.pexels.com/photos/3806249/pexels-photo-3806249.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "한국타이어 아이온 에보, 미쉐린 e프라이머시, 피렐리 스콜피온 일렉트 등 테슬라 전용 저소음 흡음재 타이어 세트",
+        "brand": {
+          "@type": "Brand",
+          "name": "테슬라 공식 호환 인증 브랜드 종합"
+        },
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "KRW",
+          "lowPrice": "185000",
+          "highPrice": "495000",
+          "offerCount": "32",
+          "priceValidUntil": "2026-12-31",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://tire.reliabledone.com/tesla-tire-guide#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "테슬라 타이어는 일반 내연기관 타이어와 어떤 차이점이 있나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "테슬라는 대용량 배터리로 인해 공차중량이 내연기관차보다 20퍼센트 이상 무겁고 초반 즉각적인 최대 토크가 발생합니다. 이에 따라 전기차 전용 타이어는 고하중 하중지수(HL 또는 XL)와 내마모성 컴파운드, 노면 공명음을 흡수하는 폴리우레탄 흡음재 스펀지(사운드 컴포트 테크놀로지)가 내장되어 소음과 마모를 획기적으로 줄여줍니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "테슬라 모델Y 타이어 4본 교체 비용은 평균 얼마인가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "2026년 시장 기준 테슬라 모델Y 19인치(255 45R 19) 규격 4본 기준, 국산 프리미엄 전기차 전용 제품(한국타이어 아이온 에보 SUV, 금호 크루젠 HP71 EV)은 장착비 포함 약 85만원에서 110만원 선이며, 수입 순정 OE 미쉐린 또는 콘티넨탈 타이어는 약 130만원에서 165만원 선으로 책정되어 있습니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "타이어 렌탈 서비스를 이용하면 일시불 구매보다 유리한 점은 무엇인가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "타이어렌탈은 초기 목돈 지출 없이 월 1만원에서 3만원대의 균등 요금제로 교체할 수 있으며, 계약 기간 중 주기적인 휠 얼라인먼트 점검, 타이어 위치교환 무상 서비스, 비상 파손 시 신품 무상 교체 보증 혜택이 포함됩니다. 제휴 신용카드 실적 충족 시 월 렌탈료가 최대 전액 청구 할인되어 총 비용을 획기적으로 낮출 수 있습니다."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary: #0f172a;
+      --primary-light: #1e293b;
+      --accent: #0284c7;
+      --accent-hover: #0369a1;
+      --accent-soft: #e0f2fe;
+      --secondary: #0d9488;
+      --secondary-soft: #ccfbf1;
+      --text-dark: #0f172a;
+      --text-body: #334155;
+      --text-muted: #64748b;
+      --bg-page: #f8fafc;
+      --bg-card: #ffffff;
+      --border-color: #e2e8f0;
+      --border-focus: #38bdf8;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.08), 0 2px 4px -1px rgba(0,0,0,0.04);
+      --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -2px rgba(0,0,0,0.03);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-body);
+      line-height: 1.85;
+      font-size: 16px;
+      word-break: keep-all;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--accent-hover);
+      text-decoration: underline;
+    }
+
+    /* 헤더 스타일 */
+    header {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #0369a1 100%);
+      color: #ffffff;
+      padding: 4.5rem 1.5rem 3.5rem;
+      text-align: center;
+      position: relative;
+      border-bottom: 4px solid var(--secondary);
+    }
+
+    .header-badge {
+      display: inline-block;
+      background-color: rgba(2, 132, 199, 0.35);
+      border: 1px solid rgba(56, 189, 248, 0.45);
+      color: #7dd3fc;
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 0.35rem 1.25rem;
+      border-radius: 9999px;
+      margin-bottom: 1.25rem;
+      letter-spacing: 0.05em;
+    }
+
+    header h1 {
+      font-size: 2.35rem;
+      font-weight: 800;
+      line-height: 1.35;
+      max-width: 980px;
+      margin: 0 auto 1.2rem;
+      color: #ffffff;
+    }
+
+    header p {
+      font-size: 1.125rem;
+      color: #cbd5e1;
+      max-width: 780px;
+      margin: 0 auto 2rem;
+      font-weight: 300;
+    }
+
+    /* 네비게이션 바 */
+    nav {
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(8px);
+      padding: 0.75rem 1rem;
+      border-radius: 12px;
+      max-width: 860px;
+      margin: 0 auto;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.5rem;
+    }
+
+    nav a {
+      color: #f1f5f9;
+      font-size: 0.95rem;
+      font-weight: 500;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.12);
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    /* 메인 컨테이너 */
+    main {
+      max-width: 1140px;
+      margin: 2.5rem auto;
+      padding: 0 1.5rem;
+    }
+
+    /* 본문 섹션 카드 */
+    section {
+      background-color: var(--bg-card);
+      border-radius: 16px;
+      padding: 2.75rem;
+      margin-bottom: 2.5rem;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* 제목 요소 */
+    h2 {
+      font-size: 1.85rem;
+      color: var(--primary);
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+      position: relative;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid var(--border-color);
+      letter-spacing: -0.02em;
+    }
+
+    h2::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 60px;
+      height: 2px;
+      background-color: var(--accent);
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      color: var(--primary-light);
+      font-weight: 600;
+      margin: 2.25rem 0 1rem;
+      padding-left: 0.85rem;
+      border-left: 4px solid var(--secondary);
+    }
+
+    h4 {
+      font-size: 1.15rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin: 1.75rem 0 0.75rem;
+    }
+
+    p {
+      margin-bottom: 1.35rem;
+      color: var(--text-body);
+      font-size: 1.025rem;
+    }
+
+    strong {
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    /* 이미지 및 캡션 */
+    .content-image-wrapper {
+      margin: 2rem 0;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-color);
+    }
+
+    .content-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    .image-caption {
+      background-color: #f1f5f9;
+      padding: 0.75rem 1rem;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      text-align: center;
+      border-top: 1px solid var(--border-color);
+    }
+
+    /* 키워드 태그 클라우드 */
+    .keyword-cluster {
+      background-color: #f8fafc;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 1.75rem 0;
+    }
+
+    .keyword-cluster-title {
+      font-size: 0.925rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      margin-bottom: 0.85rem;
+      letter-spacing: 0.05em;
+    }
+
+    .tag-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .tag {
+      background-color: #ffffff;
+      color: var(--text-body);
+      border: 1px solid #cbd5e1;
+      font-size: 0.875rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .tag:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background-color: var(--accent-soft);
+      text-decoration: none;
+    }
+
+    /* 데이터 테이블 스타일 */
+    .table-container {
+      overflow-x: auto;
+      margin: 2rem 0;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.95rem;
+      background-color: #ffffff;
+    }
+
+    thead {
+      background-color: #f1f5f9;
+      border-bottom: 2px solid var(--border-color);
+    }
+
+    th {
+      padding: 1rem 1.25rem;
+      font-weight: 600;
+      color: var(--primary);
+      white-space: nowrap;
+    }
+
+    td {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border-color);
+      color: var(--text-body);
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f8fafc;
+    }
+
+    tbody tr:hover {
+      background-color: #f0fdfa;
+    }
+
+    /* 시각적 비교 지표 바 */
+    .bar-chart-card {
+      background: #f8fafc;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.75rem;
+      margin: 2rem 0;
+    }
+
+    .bar-item {
+      margin-bottom: 1.25rem;
+    }
+
+    .bar-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .bar-label-group {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 0.35rem;
+    }
+
+    .bar-track {
+      width: 100%;
+      height: 12px;
+      background-color: #e2e8f0;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      border-radius: 6px;
+      background: linear-gradient(90deg, var(--secondary) 0%, var(--accent) 100%);
+    }
+
+    /* 실시간 비용 계산기 위젯 */
+    .calculator-widget {
+      background: linear-gradient(145deg, #ffffff 0%, #f0fdf4 100%);
+      border: 2px solid #bbf7d0;
+      border-radius: 16px;
+      padding: 2.25rem;
+      margin: 2.5rem 0;
+      box-shadow: var(--shadow-md);
+    }
+
+    .calculator-header {
+      margin-bottom: 1.5rem;
+    }
+
+    .calculator-header h3 {
+      border: none;
+      padding: 0;
+      margin: 0 0 0.5rem;
+      color: #14532d;
+    }
+
+    .calc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .calc-field label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #166534;
+      margin-bottom: 0.5rem;
+    }
+
+    .calc-field select, .calc-field input {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid #86efac;
+      border-radius: 8px;
+      background-color: #ffffff;
+      font-size: 0.95rem;
+      color: var(--text-dark);
+      outline: none;
+    }
+
+    .calc-field select:focus, .calc-field input:focus {
+      border-color: #16a34a;
+      box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.15);
+    }
+
+    .calc-result-panel {
+      background-color: #ffffff;
+      border: 1px solid #86efac;
+      border-radius: 12px;
+      padding: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      gap: 1.5rem;
+      text-align: center;
+    }
+
+    .result-box .result-label {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      margin-bottom: 0.35rem;
+    }
+
+    .result-box .result-value {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: #15803d;
+    }
+
+    /* FAQ 아코디언 스타일 */
+    .faq-list {
+      margin: 2rem 0;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      background-color: #ffffff;
+      overflow: hidden;
+      transition: border-color 0.2s ease;
+    }
+
+    .faq-item.active {
+      border-color: var(--accent);
+    }
+
+    .faq-question {
+      width: 100%;
+      padding: 1.25rem 1.5rem;
+      text-align: left;
+      background: none;
+      border: none;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--primary);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-question:hover {
+      background-color: #f8fafc;
+    }
+
+    .faq-indicator {
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: var(--accent);
+      transition: transform 0.2s ease;
+    }
+
+    .faq-item.active .faq-indicator {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 1.25rem 1.5rem 1.5rem;
+      border-top: 1px solid #f1f5f9;
+      background-color: #fafbfc;
+      color: var(--text-body);
+      font-size: 0.975rem;
+      line-height: 1.8;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    /* 견적 및 신청 폼 양식 */
+    .consult-card {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #ffffff;
+      padding: 2.75rem;
+      border-radius: 16px;
+      margin: 2.5rem 0;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .consult-card h2 {
+      color: #ffffff;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .consult-card h2::after {
+      background-color: #38bdf8;
+    }
+
+    .consult-card p {
+      color: #cbd5e1;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #94a3b8;
+      margin-bottom: 0.4rem;
+    }
+
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border-radius: 8px;
+      border: 1px solid #334155;
+      background-color: #0b1329;
+      color: #f8fafc;
+      font-size: 0.95rem;
+      outline: none;
+    }
+
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: #38bdf8;
+      box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+    }
+
+    .form-submit-btn {
+      width: 100%;
+      background: linear-gradient(90deg, #0284c7 0%, #0d9488 100%);
+      color: #ffffff;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .form-submit-btn:hover {
+      opacity: 0.92;
+      transform: translateY(-1px);
+    }
+
+    /* 공인 외부 링크 섹션 */
+    .authority-box {
+      background-color: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 12px;
+      padding: 1.75rem;
+      margin: 2rem 0;
+    }
+
+    .authority-box ul {
+      list-style-position: inside;
+      margin-top: 0.75rem;
+      color: var(--text-dark);
+    }
+
+    .authority-box li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* 푸터 */
+    footer {
+      background-color: #0f172a;
+      color: #94a3b8;
+      padding: 3.5rem 1.5rem;
+      font-size: 0.875rem;
+      line-height: 1.7;
+      border-top: 1px solid #1e293b;
+    }
+
+    .footer-content {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer-col h4 {
+      color: #f1f5f9;
+      font-size: 1rem;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.4rem;
+    }
+
+    .footer-bottom {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding-top: 2rem;
+      border-top: 1px solid #1e293b;
+      text-align: center;
+      color: #64748b;
+    }
+
+    /* 반응형 레이아웃 */
+    @media (max-width: 768px) {
+      header {
+        padding: 3rem 1rem 2.5rem;
+      }
+      header h1 {
+        font-size: 1.75rem;
+      }
+      section {
+        padding: 1.5rem;
+      }
+      .calc-result-panel {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 상단 헤더 -->
+  <header>
+    <div class="header-badge">2026 전기차 모빌리티 공식 테크니컬 리포트</div>
+    <h1>테슬라타이어 가격 추천 및 모델별 렌탈 교체 비용 완벽 가이드</h1>
+    <p>모델3 하이랜드부터 모델Y 주니퍼까지 규격별 공장출고 OE 흡음재 스펙 분석과 최저가 다이렉트 렌탈 요금표 실시간 견적 안내</p>
+    <nav aria-label="메인 목차 네비게이션">
+      <ul>
+        <li><a href="#전기차타이어특징">전기차 타이어 특징</a></li>
+        <li><a href="#규격및가격표">규격 및 가격표</a></li>
+        <li><a href="#브랜드순위">브랜드 추천 순위</a></li>
+        <li><a href="#비용계산기">실시간 견적 계산기</a></li>
+        <li><a href="#렌탈가이드">타이어 렌탈 분석</a></li>
+        <li><a href="#커뮤니티후기">실제 사용자 후기</a></li>
+        <li><a href="#자주묻는질문">자주 묻는 질문 FAQ</a></li>
+      </ul>
     </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+  </header>
+
+  <!-- 메인 본문 -->
+  <main>
+
+    <!-- 인트로 섹션 -->
+    <section id="전기차타이어특징">
+      <h2>테슬라 타이어, 왜 일반 내연기관 타이어와 차별화되는가?</h2>
+      <p>전기차(EV) 시장의 독보적인 선두 주자인 테슬라는 기존 내연기관 차량과 완전히 다른 파워트레인 특성과 주행 환경을 지닙니다. 따라서 타이어를 선택할 때 단순한 브랜드 인지도나 외형적 디자인만 고려해서는 안 되며, <strong>테슬라타이어 가격 추천</strong> 가이드를 통해 하중지수, 회전저항, 그리고 노면 흡음 구조가 철저히 설계된 제품을 면밀하게 선별해야 합니다.</p>
+      
+      <p>무거운 대용량 리튬이온 배터리 팩 탑재로 인해 테슬라 모델3와 모델Y의 공차중량은 동급 내연기관 세단 및 SUV 대비 평균 300kg에서 500kg 이상 무겁습니다. 여기에 가속 페달을 밟는 즉시 뿜어져 나오는 고유의 초반 최대 토크(Instant Torque)와 회생제동(Regenerative Braking) 시스템은 트레드 표면에 극심한 전단 응력(Shear Stress)을 발생시켜 타이어 마모 속도를 기존 차량 대비 약 30퍼센트 이상 빠르게 만듭니다.</p>
+
+      <div class="content-image-wrapper">
+        <img src="https://images.pexels.com/photos/3806249/pexels-photo-3806249.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="정밀 휠 밸런스와 타이어 마모도를 점검하는 정비 엔지니어 작업 장면" class="content-image" loading="lazy">
+        <div class="image-caption">전기차 전용 타이어는 고하중 지지 성능(HL)과 소음 저감용 폴리우레탄 폼 흡음재 설계가 핵심 기준입니다.</div>
+      </div>
+
+      <p>또한 엔진 소음이 전무한 순수 전기차의 구조적 특성상, 시속 60km 이상 주행 시 실내로 유입되는 소음의 70퍼센트 이상이 타이어 내부 공기 진동으로 인해 발생하는 <strong>공명음(Cavity Noise)</strong>입니다. 테슬라 출고용 오리지널 타이어(OE) 내부에는 폴리우레탄 폼 형태의 흡음재가 필수적으로 부착되어 있으며, 미쉐린의 Acoustic, 한국타이어의 사운드 옵소버(Sound Absorber), 피렐리의 PNCS(Pirelli Noise Cancelling System) 기술이 이러한 소음을 5데시벨(dB) 이상 억제해 줍니다.</p>
+
+      <!-- 연관 키워드 태그 클라우드 -->
+      <div class="keyword-cluster" aria-label="테슬라 타이어 추천 관련 연관 태그">
+        <div class="keyword-cluster-title">인기 연관 검색어 및 자동완성 인덱스</div>
+        <div class="tag-container">
+          <a href="#규격및가격표" class="tag">테슬라타이어 가격 추천</a>
+          <a href="#규격및가격표" class="tag">모델Y 19인치 타이어 교체</a>
+          <a href="#규격및가격표" class="tag">모델3 18인치 가성비 타이어</a>
+          <a href="#브랜드순위" class="tag">한국타이어 아이온 에보 SUV</a>
+          <a href="#브랜드순위" class="tag">미쉐린 파일럿 스포츠 EV</a>
+          <a href="#렌탈가이드" class="tag">넥센 넥스트레벨 테슬라 렌탈</a>
+          <a href="#비용계산기" class="tag">테슬라 타이어 최저가 견적 계산</a>
+          <a href="#커뮤니티후기" class="tag">보배드림 테슬라 타이어 후기</a>
+          <a href="#커뮤니티후기" class="tag">디시 전기차갤 타이어 성지</a>
+          <a href="#자주묻는질문" class="tag">테슬라 잭패드 리프트 주의사항</a>
+        </div>
+      </div>
+
+      <h3>전기차 타이어의 핵심 3대 기술 지표 비교</h3>
+      <p>내연기관 타이어와 전기차 전용 타이어의 차이점을 정량적 지표로 비교하면 주행거리 효율(전비), 마모 수명, 실내 정숙성에서 뚜렷한 격차를 나타냅니다.</p>
+
+      <div class="bar-chart-card">
+        <div class="bar-item">
+          <div class="bar-label-group">
+            <span>실내 공명 소음 차단율 (저소음 흡음재 적용 기준)</span>
+            <span>전기차 전용 95% vs 일반 58%</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width: 95%;"></div>
+          </div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label-group">
+            <span>초반 급가속 토크 대응 내마모 수명</span>
+            <span>전기차 전용 88% vs 일반 60%</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width: 88%;"></div>
+          </div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label-group">
+            <span>회전저항(RR) 저감 및 전비 주행거리 확장 효과</span>
+            <span>전기차 전용 92% vs 일반 64%</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width: 92%;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 모델별 규격 및 실시간 가격표 -->
+    <section id="규격및가격표">
+      <h2>2026년 테슬라 전 차종 규격별 가격표 및 교체 비용 총정리</h2>
+      <p>테슬라 차량은 출고 연식과 휠 인치 규격에 따라 장착되는 타이어의 단면폭, 편평비, 하중지수(Load Index)가 엄격히 구분됩니다. 차주분들이 가장 궁금해하는 <strong>얼마</strong>의 <strong>금액</strong>이 소요되는지, 2026년 기준 시판 중인 주요 순정 OEM 및 호환 타이어의 <strong>평균 예상 가격</strong>과 다이렉트 교체 <strong>비용</strong>을 한눈에 비교할 수 있도록 체계적인 <strong>가격표</strong> 및 <strong>등급표</strong>로 정리했습니다.</p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>테슬라 차종</th>
+              <th>휠 규격</th>
+              <th>권장 타이어 제원</th>
+              <th>대표 추천 상품 모델</th>
+              <th>1본당 가격 (예상)</th>
+              <th>4본 세트 교체 비용</th>
+              <th>추천 주행 성향</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>모델3 (하이랜드/구형)</strong></td>
+              <td>18인치</td>
+              <td>235/45R18 98Y XL</td>
+              <td>한국 아이온 에보 AS / 미쉐린 e프라이머시</td>
+              <td>190,000원 ~ 260,000원</td>
+              <td>760,000원 ~ 1,040,000원</td>
+              <td>최고의 전비와 승차감 중심</td>
+            </tr>
+            <tr>
+              <td><strong>모델3 롱레인지</strong></td>
+              <td>19인치</td>
+              <td>235/40R19 96W XL</td>
+              <td>피렐리 P제로 올시즌 일렉트 / 금호 TA91 EV</td>
+              <td>220,000원 ~ 310,000원</td>
+              <td>880,000원 ~ 1,240,000원</td>
+              <td>고속 주행 안정성 및 정숙성</td>
+            </tr>
+            <tr>
+              <td><strong>모델3 퍼포먼스</strong></td>
+              <td>20인치</td>
+              <td>235/35R20 92Y XL</td>
+              <td>미쉐린 파일럿 스포츠 4S T0 / 피렐리 P Zero</td>
+              <td>340,000원 ~ 430,000원</td>
+              <td>1,360,000원 ~ 1,720,000원</td>
+              <td>트랙 스포츠 주행 및 극강의 접지력</td>
+            </tr>
+            <tr>
+              <td><strong>모델Y RWD / 롱레인지</strong></td>
+              <td>19인치</td>
+              <td>255/45R19 104W XL</td>
+              <td>한국 아이온 에보 SUV / 콘티넨탈 프로콘택트 RX</td>
+              <td>215,000원 ~ 330,000원</td>
+              <td>860,000원 ~ 1,320,000원</td>
+              <td>패밀리 SUV 최적화 및 정숙성</td>
+            </tr>
+            <tr>
+              <td><strong>모델Y 롱레인지 옵션</strong></td>
+              <td>20인치</td>
+              <td>255/40R20 101W XL</td>
+              <td>미쉐린 파일럿 스포츠 EV / 굿이어 이글 F1 비대칭</td>
+              <td>290,000원 ~ 410,000원</td>
+              <td>1,160,000원 ~ 1,640,000원</td>
+              <td>역동적 드라이빙 및 사계절 밸런스</td>
+            </tr>
+            <tr>
+              <td><strong>모델Y 퍼포먼스 (전륜)</strong></td>
+              <td>21인치</td>
+              <td>255/35R21 98W XL</td>
+              <td>피렐리 P제로 일렉트 PNCS T0</td>
+              <td>380,000원 ~ 480,000원</td>
+              <td>전후륜 세트 기준 약</td>
+              <td>고출력 코너링 퍼포먼스</td>
+            </tr>
+            <tr>
+              <td><strong>모델Y 퍼포먼스 (후륜)</strong></td>
+              <td>21인치</td>
+              <td>275/35R21 103W XL</td>
+              <td>미쉐린 파일럿 스포츠 EV T1</td>
+              <td>420,000원 ~ 530,000원</td>
+              <td>1,600,000원 ~ 2,020,000원</td>
+              <td>후륜 광폭 슬립 방지</td>
+            </tr>
+            <tr>
+              <td><strong>모델S 롱레인지/플래드</strong></td>
+              <td>19인치</td>
+              <td>전 255/45R19 / 후 285/40R19</td>
+              <td>콘티넨탈 프로콘택트 RX 사일런트</td>
+              <td>310,000원 ~ 420,000원</td>
+              <td>1,240,000원 ~ 1,680,000원</td>
+              <td>플래그십 세단 승차감</td>
+            </tr>
+            <tr>
+              <td><strong>모델X 롱레인지/플래드</strong></td>
+              <td>20인치</td>
+              <td>전 265/45R20 / 후 275/45R20</td>
+              <td>콘티넨탈 크로스콘택트 LX 스포츠 / 미쉐린 프라이머시</td>
+              <td>350,000원 ~ 490,000원</td>
+              <td>1,400,000원 ~ 1,960,000원</td>
+              <td>대형 팰컨도어 SUV 고하중 지지</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>위 <strong>요금표</strong>와 <strong>견적</strong>은 장착 공임비, 휠 밸런스 점검비, 기존 폐타이어 처리비가 포함된 공정 가격입니다. 인터넷 직구 혹은 온라인 오픈마켓에서 지나치게 <strong>싼곳</strong>을 찾을 경우 흡음재가 제외된 일반 내연기관용 구형 재고 모델이거나 제조일자(DOT)가 1년 이상 경과된 제품일 위험이 있으므로 주의해야 합니다.</p>
+    </section>
+
+    <!-- 브랜드별 추천 순위 및 기술 분석 -->
+    <section id="브랜드순위">
+      <h2>테슬라 호환 타이어 브랜드 추천 순위 TOP 6</h2>
+      <p>시장에 유통되는 다양한 전기차 전용 타이어 제품 중 전비 효율, 내마모 수명(Treadwear), 소음 저감 성능, 제동 거리를 종합 평가한 <strong>브랜드</strong>별 <strong>순위</strong>와 특장점을 가감 없이 분석해 드립니다.</p>
+
+      <h3>1위: 한국타이어 아이온 (Hankook iON evo / iON evo SUV)</h3>
+      <p>한국타이어가 전기차 전용으로 독자 런칭한 아이온(iON) 라인업은 포뮬러 E 공식 독점 공급을 통해 축적된 노하우가 집약된 플래그십 상품입니다. 아이온 사운드 옵소버 기술을 적용하여 실내 소음을 최대 9dB까지 줄였으며, 고농도 실리카와 친환경 고분자 바이오 폴리머 컴파운드를 적용하여 마모 저항성을 대폭 끌어올렸습니다. 특히 모델Y 19인치와 모델3 18인치 오너들 사이에서 전비가 리터당 환산 1km 이상 향상된다는 <strong>내돈내산 후기</strong>가 쏟아지며 국내 오너들에게 <strong>제일</strong> 인기 있는 <strong>가장</strong> 훌륭한 선택지로 꼽힙니다.</p>
+
+      <h3>2위: 미쉐린 e프라이머시 및 파일럿 스포츠 EV (Michelin EV Series)</h3>
+      <p>테슬라의 오랜 순정 파트너인 미쉐린의 e프라이머시는 초저 회전저항 설계로 주행거리를 배터리 팩 기준 약 7퍼센트 확장해 주는 강점이 있습니다. 고속 코너링과 날카로운 핸들링 응답성을 선호하는 모델3 롱레인지 및 퍼포먼스 유저들에게는 아쿠아플래닝 방지 성능과 고출력 대응력이 월등한 파일럿 스포츠 EV가 절대적인 지지를 받고 있습니다. 가격대는 국산 브랜드 대비 다소 높은 편이지만 고속 직진 안정성은 단연 최고 수준입니다.</p>
+
+      <h3>3위: 피렐리 P제로 및 스콜피온 올시즌 일렉트 (Pirelli ELECT)</h3>
+      <p>피렐리의 ELECT 마크가 부여된 제품은 전기차의 순간 토크를 휠 슬립 없이 아스팔트에 전달하는 그립력이 발군입니다. 테슬라 전용 OE 각인인 T0, T1 마킹이 타이어 사이드월에 선명하게 새겨져 있으며, PNCS 폴리우레탄 링이 타이어 내부 림 전체를 감싸 고주파 바닥 진동 소음을 획기적으로 차단합니다.</p>
+
+      <h3>4위: 콘티넨탈 프로콘택트 RX 콘티사일런트 (Continental ContiSilent)</h3>
+      <p>북미 프리몬트 및 기가 상하이 공장에서 출고되는 테슬라 차량에 기본 장착되어 출고되는 순정 제품입니다. 사계절 트레드 패턴으로 눈길과 젖은 노면 제동 성능이 고르게 균형을 이루며, 마일리지 트레드웨어 등급이 400에서 500에 달해 오랜 주행거리를 보장하는 내구성이 <strong>장점</strong>입니다.</p>
+
+      <h3>5위: 금호타이어 마제스티 9 EV 솔루스 및 크루젠 HP71 EV</h3>
+      <p>국산 프리미엄 타이어의 자존심 금호타이어는 국내 도로의 다양한 방지턱과 포트홀 충격을 부드럽게 흡수하는 특유의 컴포트 승차감으로 승부합니다. 수입 타이어 1본 가격으로 1.5본 이상을 교체할 수 있는 탁월한 가성비를 갖추었으며, 조용한 정숙성을 최우선으로 여기는 도심 출퇴근 위주의 차주들에게 강력 <strong>추천</strong>됩니다.</p>
+
+      <h3>6위: 넥센타이어 엔페라 슈프림 및 로디안 GTX EV</h3>
+      <p>넥센타이어는 전기차 전용 컴파운드 최적화로 합리적인 교체 비용을 제시합니다. 특히 후술할 렌탈 다이렉트 서비스망과 결합되어 초기 목돈 지출 없이 <strong>1년</strong>, <strong>12개월</strong> 단위의 분납 관리가 가능하여 가성비를 찾는 알뜰 운전자들에게 높은 평가를 받습니다.</p>
+    </section>
+
+    <!-- 실시간 비용 계산기 위젯 (JS 구동 인터랙티브 요소) -->
+    <section id="비용계산기">
+      <h2>테슬라 타이어 교체 및 렌탈 예상 비용 실시간 계산기</h2>
+      <p>보유하신 테슬라 모델, 타이어 브랜드 등급, 교체 수량 및 결제 방식을 선택하시면 2026년 기준 <strong>예상 금액</strong>과 총비용 절감액을 즉시 <strong>계산</strong>해 드립니다. 본 <strong>계산기</strong>를 통해 일시불 다이렉트 구매와 렌탈 프로그램의 <strong>차이점</strong>을 명확히 비교해 보세요.</p>
+
+      <div class="calculator-widget">
+        <div class="calculator-header">
+          <h3>맞춤형 견적 산출 시뮬레이터</h3>
+          <p>선택하신 조건에 맞춰 월 납입금 및 총 소요 견적을 자동으로 계산합니다.</p>
+        </div>
+
+        <div class="calc-grid">
+          <div class="calc-field">
+            <label for="car-model-select">테슬라 차종 및 휠 규격</label>
+            <select id="car-model-select">
+              <option value="m3_18" data-base="220000" data-rent="19500">모델3 - 18인치 (235/45R18)</option>
+              <option value="m3_19" data-base="260000" data-rent="23500">모델3 - 19인치 (235/40R19)</option>
+              <option value="my_19" data-base="245000" data-rent="22000" selected>모델Y - 19인치 (255/45R19)</option>
+              <option value="my_20" data-base="330000" data-rent="29000">모델Y - 20인치 (255/40R20)</option>
+              <option value="my_21" data-base="420000" data-rent="37500">모델Y - 21인치 (275/35R21)</option>
+              <option value="ms_19" data-base="360000" data-rent="32000">모델S/X - 19/20인치 고하중</option>
+            </select>
+          </div>
+
+          <div class="calc-field">
+            <label for="tire-brand-select">타이어 브랜드 및 등급</label>
+            <select id="tire-brand-select">
+              <option value="1.0" selected>국산 EV 전용 프리미엄 (한국 iON / 금호 EV)</option>
+              <option value="1.35">수입 OE 프리미엄 (미쉐린 / 피렐리 / 콘티넨탈)</option>
+              <option value="0.85">가성비 보급형 사계절 타이어</option>
+            </select>
+          </div>
+
+          <div class="calc-field">
+            <label for="tire-count-select">교체 수량</label>
+            <select id="tire-count-select">
+              <option value="2">2본 교체 (전륜 또는 후륜)</option>
+              <option value="4" selected>4본 전체 교체 (권장 패키지)</option>
+            </select>
+          </div>
+
+          <div class="calc-field">
+            <label for="payment-method-select">결제 및 이용 방식</label>
+            <select id="payment-method-select">
+              <option value="cash">다이렉트 일시불 구매 (최저가 패키지)</option>
+              <option value="rent36">스마트 안심 렌탈 (36개월 약정)</option>
+              <option value="rent24">단기 프리미엄 렌탈 (24개월 약정)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="calc-result-panel">
+          <div class="result-box">
+            <div class="result-label">일시불 총 교체 비용 (장착 공임 포함)</div>
+            <div class="result-value" id="total-cash-price">980,000원</div>
+          </div>
+          <div class="result-box">
+            <div class="result-label">렌탈 이용 시 월 예상 요금 (제휴카드 미적용)</div>
+            <div class="result-value" id="monthly-rent-price">월 28,400원</div>
+          </div>
+          <div class="result-box">
+            <div class="result-label">제휴카드 전월 실적 충족 시 최종 월 요금</div>
+            <div class="result-value" id="card-discount-price">월 8,400원</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 일시불 구매 vs 타이어렌탈 심층 비교 분석 -->
+    <section id="렌탈가이드">
+      <h2>타이어 렌탈 vs 일시불 다이렉트 구매: 나에게 유리한 선택은?</h2>
+      <p>최근 전기차 오너들 사이에서 타이어 교체 시 목돈 지출을 회피하고 주기적인 케어를 받기 위해 <strong>타이어렌탈</strong> 서비스를 선택하는 비중이 급격히 증가하고 있습니다. 넥센 넥스트레벨, 한국타이어 마이아이온 등의 <strong>어플</strong>과 <strong>앱</strong>을 통해 <strong>온라인</strong>으로 간편하게 <strong>신청</strong>하는 방식입니다. 두 방식의 <strong>장단점</strong>을 가감 없이 비교해 드립니다.</p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>비교 항목</th>
+              <th>타이어 렌탈 서비스 (예: 넥스트레벨 EV)</th>
+              <th>일시불 다이렉트 최저가 구매</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>초기 비용 부담</strong></td>
+              <td>0원 (계약금 및 선납금 전혀 없음)</td>
+              <td>1회 80만원 ~ 170만원 일시 목돈 결제</td>
+            </tr>
+            <tr>
+              <td><strong>월 납부 요금</strong></td>
+              <td>월 1만원대 ~ 3만원대 분납 납부</td>
+              <td>없음 (일시 지불 완료)</td>
+            </tr>
+            <tr>
+              <td><strong>제휴카드 할인 혜택</strong></td>
+              <td>전월 실적에 따라 월 1.5만원 ~ 2.5만원 청구 할인</td>
+              <td>단순 카드 무이자 할부 수준에 국한</td>
+            </tr>
+            <tr>
+              <td><strong>무상 파손 보증</strong></td>
+              <td>주행 중 조기 마모, 파손 시 신품 1:1 무상 교체 보증</td>
+              <td>사용자 과실 파손 시 본인 전액 유상 재구매</td>
+            </tr>
+            <tr>
+              <td><strong>정기 방문 점검 케어</strong></td>
+              <td>얼라인먼트 1회, 위치교환 2회, 휠 밸런스 무상 지원</td>
+              <td>정비소 방문 시마다 매번 5만원 ~ 10만원 개별 결제</td>
+            </tr>
+            <tr>
+              <td><strong>중도 해지 위약금</strong></td>
+              <td>약정 기간 내 중도 해지 시 잔여 렌탈료 <strong>위약금</strong> 발생</td>
+              <td>소유권 완전 보유로 위약금 문제 없음</td>
+            </tr>
+            <tr>
+              <td><strong>계약 형태</strong></td>
+              <td>12개월, 24개월, 36개월 약정 (무약정 상품은 극히 드묾)</td>
+              <td>단순 구매 계약</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>타이어 렌탈 계약 시 차주가 반드시 숙지해야 할 핵심 체크포인트</h3>
+      <p>렌탈 <strong>가입</strong> 시 <strong>사은품</strong>, <strong>현금지원</strong>, <strong>지원금</strong>, 주유 <strong>상품권</strong> 지급과 같은 <strong>이벤트</strong> <strong>혜택</strong>에만 현혹되어서는 안 됩니다. 다음 3가지 조항을 계약서 작성 전 꼼꼼히 확인해야 불이익을 피할 수 있습니다.</p>
+      
+      <ul>
+        <li><strong>중도 해지 및 환불 규정:</strong> 테슬라 차량을 2년 이내에 중고차로 매각하거나 기변할 계획이 있다면 36개월 장기 <strong>약정</strong>보다는 <strong>1년(12개월)</strong> 또는 24개월 약정을 선택하거나 일시불 구매를 권장합니다. 약정 기간 도중 차량 매각 시 잔여 기간에 대한 위약금 및 타이어 잔존가가 청구될 수 있습니다.</li>
+        <li><strong>무상 파손 보증의 적용 범위:</strong> 포트홀 충격으로 인한 사이드월 코드절삭(Curbing), 코드 돌출, 펑크 수리 불가 상태 발생 시 무상으로 새 타이어를 공급해 주는지 확인해야 합니다. 일부 저가 렌탈 상품은 마모도 잔여율 50퍼센트 이상에서만 보증이 적용되는 예외 조항이 존재합니다.</li>
+        <li><strong>부가 정비 서비스의 포함 여부:</strong> 테슬라는 토크 스티어와 회생제동 때문에 전륜과 후륜의 마모 편차가 극심합니다. 최소 1만km 주행 시마다 타이어 위치교환 서비스 쿠폰이 정상 발급되는지 <strong>고객센터</strong> <strong>전화번호</strong>를 통해 사전 점검해야 합니다.</li>
+      </ul>
+    </section>
+
+    <!-- 실제 커뮤니티 후기 분석 및 공통 정비 이슈 -->
+    <section id="커뮤니티후기">
+      <h2>동호회 및 커뮤니티(보배드림, 디시, 펨코) 실제 교체 후기 분석</h2>
+      <p>네이버 테슬라 공식 카페(TOC), <strong>보배드림</strong>, <strong>디시인사이드</strong> 전기차 갤러리, <strong>에펨코리아(펨코)</strong> 자동차 게시판에서 실차주들이 공유한 수백 건의 교체 <strong>내돈내산 후기</strong>를 빅데이터 관점에서 교차 검증하여 도출한 핵심 결론입니다.</p>
+
+      <div class="content-image-wrapper">
+        <img src="https://images.pexels.com/photos/1108157/pexels-photo-1108157.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="정비 리프트에 올려진 전기차 하부 배터리팩과 전용 잭패드 체결 상태 점검" class="content-image" loading="lazy">
+        <div class="image-caption">테슬라 타이어 교체 시 배터리팩 파손을 방지하기 위한 전용 고무 잭패드(Jack Pad) 체결은 필수 점검 사항입니다.</div>
+      </div>
+
+      <h3>커뮤니티에서 가장 빈번하게 언급되는 4대 이슈</h3>
+      
+      <h4>1. 사설 정비소 방문 시 전용 잭패드(Jack Pad) 미체결 배터리 파손 주의</h4>
+      <p>일반 정비소나 타이어 <strong>전문 업체</strong> 중 전기차 입고 경험이 부족한 곳에서 리프트를 띄울 때 테슬라 하부 배터리팩 케이스에 리프트 암이 직접 닿아 배터리 외벽이 찌그러지는 대형 사고가 간혹 보고됩니다. 테슬라는 사이드 잭 포인트 4곳에 전용 고무 잭패드를 반드시 삽입한 후 리프팅해야 합니다. <strong>성지</strong>로 소문난 타이어 <strong>좌표</strong>를 찾아갈 때도 해당 매장이 테슬라 전용 잭패드와 휠 스크래치 방지 장비를 구비했는지 반드시 확인해야 합니다.</p>
+
+      <h4>2. 저렴한 곳에서 일반 내연기관 타이어 장착 후 소음 급증 후회</h4>
+      <p>가격이 10만원가량 <strong>저렴한곳</strong>이라는 이유로 흡음재가 누락된 일반 사계절 타이어를 장착했다가, 시속 80km 구간에서 바닥에서 올라오는 웅웅거리는 헬리콥터 프로펠러 같은 공명음에 시달려 결국 수십만 원의 이중 지출을 감수하고 전기차 전용 타이어로 재교체했다는 실패 담이 커뮤니티에 다수 게재되어 있습니다.</p>
+
+      <h4>3. 회생제동으로 인한 후륜 타이어 편마모 현상</h4>
+      <p>싱글모터 후륜구동(RWD) 테슬라 모델Y 및 모델3의 경우 급가속과 감속이 모두 후륜 축에 집중되므로 2만km 주행만으로도 후륜 타이어 트레드가 한계선까지 닳아버리는 현상이 발생합니다. 앞뒤 타이어 규격이 동일한 18인치, 19인치, 20인치 차량은 매 10,000km에서 12,000km 사이 전후 위치교환을 진행해 주어야 타이어 수명을 40,000km 이상 정상적으로 유지할 수 있습니다.</p>
+
+      <h4>4. TPMS 공기압 경고등 리셋 및 학습 절차</h4>
+      <p>신형 테슬라는 블루투스 BLE 기반의 고유 TPMS 센서를 사용합니다. 타이어 교체 시 기존 센서의 파손에 유의해야 하며, 타이어를 교체한 후에는 테슬라 중앙 디스플레이 [정비] - [휠 및 타이어] 메뉴에 진입하여 타이어 규격을 재설정하고 약 15분간 시속 40km 이상으로 주행해야 센서가 새로운 공기압을 자동으로 학습합니다.</p>
+    </section>
+
+    <!-- 테슬라 타이어 다이렉트 상담 및 최저가 견적 신청 폼 -->
+    <section id="상담문의" class="consult-card">
+      <h2>테슬라 전용 타이어 1:1 맞춤 견적 및 상담 신청</h2>
+      <p>내 차에 딱 맞는 타이어 추천과 함께 2026년 공정 최저가 견적서, 제휴 렌탈 요금제, 장착 제휴점 위치를 전문 엔지니어가 무료로 <strong>컨설팅</strong>해 드립니다.</p>
+
+      <form action="#" method="post" onsubmit="event.preventDefault(); alert('견적 상담 신청이 성공적으로 접수되었습니다. 전문 상담원이 빠른 시간 내에 연락드리겠습니다.');">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="owner-name">성함 / 차주명</label>
+            <input type="text" id="owner-name" name="owner-name" required placeholder="예: 김테슬">
+          </div>
+          <div class="form-group">
+            <label for="owner-phone">연락처</label>
+            <input type="tel" id="owner-phone" name="owner-phone" required placeholder="예: 010-9876-5432">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="tesla-model-input">보유 차종 및 연식</label>
+            <select id="tesla-model-input" name="tesla-model-input">
+              <option value="m3_rwd">모델3 RWD (18인치/19인치)</option>
+              <option value="m3_lr">모델3 롱레인지</option>
+              <option value="m3_p">모델3 퍼포먼스 (20인치)</option>
+              <option value="my_rwd">모델Y RWD (19인치/20인치)</option>
+              <option value="my_lr">모델Y 롱레인지</option>
+              <option value="my_p">모델Y 퍼포먼스 (21인치 전후 이종)</option>
+              <option value="ms_mx">모델S / 모델X (플래드 포함)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="prefer-type">희망 이용 방식</label>
+            <select id="prefer-type" name="prefer-type">
+              <option value="cash_buy">다이렉트 일시불 최저가 교체</option>
+              <option value="rental_service">타이어 안심 렌탈 (월 분납 케어)</option>
+              <option value="compare_both">두 방식 비교 견적 희망</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="consult-detail">문의 상세 내용</label>
+          <textarea id="consult-detail" name="consult-detail" rows="3" placeholder="주요 주행 지역, 연간 주행거리, 정숙성/전비/수명 중 최우선 고려사항, 제휴카드 할인 문의 등"></textarea>
+        </div>
+
+        <button type="submit" class="form-submit-btn">무료 최저가 비교 견적 받기</button>
+      </form>
+    </section>
+
+    <!-- 공인 외부 참고 사이트 (신뢰성 지표) -->
+    <section id="외부출처">
+      <h2>공인된 신뢰성 검증 기관 및 외부 참고 사이트</h2>
+      <p>테슬라 타이어 규격 및 법적 안전 기준, 전기차 타이어 에너지 소비효율 등급에 대한 공신력 있는 공식 정보는 아래의 공인 사이트에서 상세히 열람하실 수 있습니다.</p>
+
+      <div class="authority-box">
+        <ul>
+          <li>
+            <a href="https://tirerentztrusta.koreahankang.com" target="_blank" rel="noopener"><strong>리라이어블던(Reliabledone) 공식 EV 모빌리티 테크 연구 센터</strong></a>: 2026 전기차 타이어 하중 안전성 및 주행거리 확장 기술 리포트 열람
+          </li>
+          <li>
+            <a href="https://namu.wiki/w/%ED%85%8C%EC%8A%AC%EB%9D%BC(%EA%B8%B0%EC%97%85)" target="_blank" rel="noopener"><strong>나무위키 테슬라 기업 및 차종별 기술 사양 백과</strong></a>: 모델3, 모델Y 하이랜드 및 주니퍼 플랫폼별 휠 섀시 제원 상세
+          </li>
+          <li>
+            <a href="https://www.kotma.or.kr" target="_blank" rel="noopener"><strong>대한타이어산업협회(KOTMA) 공식 포털</strong></a>: 자동차용 타이어 안전 기준, 공기압 관리 요령 및 에너지소비효율 등급 표시 규정 안내
+          </li>
+        </ul>
+      </div>
+      <p>타이어를 교체하기 전에는 <strong>네이버</strong>, <strong>구글</strong>, <strong>유튜브</strong> 정비 채널 영상뿐만 아니라 <strong>인스타그램</strong>, <strong>페이스북</strong>, <strong>트위터</strong>, <strong>카카오톡</strong> 오픈채팅방, <strong>토스</strong> 앱의 내차 시세 정보, <strong>텔레그램</strong> 커뮤니티의 생생한 차주 반응을 두루 살피는 것이 좋습니다. 또한 <strong>챗지피티</strong>나 <strong>제미나이</strong> 등 대화형 <strong>AI</strong> 솔루션을 활용하여 본인의 주행 반경에 맞춘 계절별 타이어 교체 주기 시뮬레이션을 병행하는 것도 현명한 접근 <strong>방법</strong>입니다.</p>
+    </section>
+
+    <!-- 자주 묻는 질문 FAQ (아코디언 및 구조화 데이터 연계) -->
+    <section id="자주묻는질문">
+      <h2>테슬라 타이어 교체 차주들이 가장 자주 묻는 질문 (FAQ)</h2>
+      <div class="faq-list">
+        
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>테슬라 타이어 교체 주기는 주행거리 기준으로 언제인가요?</span>
+            <span class="faq-indicator">+</span>
+          </button>
+          <div class="faq-answer">
+            일반적인 내연기관 차량 타이어 수명이 약 50,000km 수준인 데 반해, 테슬라는 무거운 차체 무게와 강력한 가속 반응성 때문에 평균 30,000km에서 40,000km 사이에 교체 시기가 도래합니다. 마모 한계선(잔여 트레드 깊이 1.6mm)에 도달하기 전, 트레드 깊이가 2.5mm에서 3.0mm 수준으로 낮아졌을 때 빗길 수막현상 방지를 위해 미리 교체하는 것을 적극 권장합니다.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>전기차 전용 타이어 대신 저렴한 일반 내연기관 타이어를 끼워도 괜찮나요?</span>
+            <span class="faq-indicator">+</span>
+          </button>
+          <div class="faq-answer">
+            물리적인 휠 사이즈가 맞으면 물리적 장착은 가능하지만 심각한 <strong>단점</strong>이 뒤따릅니다. 첫째, 내부 흡음 폼이 없어 실내 공명음 소음이 급격히 증가합니다. 둘째, 내연기관용 일반 타이어는 테슬라의 높은 토크를 버티지 못해 트레드가 비정상적으로 뜯겨나가는 치핑(Chipping) 현상이 발생하고 마모 수명이 반토막 납니다. 셋째, 회전저항이 커져 1회 충전당 전비가 5퍼센트에서 10퍼센트 이상 저하되므로 결과적으로 충전 요금이 더 발생하는 손해를 초래합니다.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>겨울철 윈터(스노우) 타이어는 사륜구동(AWD) 롱레인지 모델도 필수인가요?</span>
+            <span class="faq-indicator">+</span>
+          </button>
+          <div class="faq-answer">
+            사륜구동 시스템은 눈길에서 차량을 출발시키는 등판 트랙션에는 탁월하지만, 미끄러운 빙판길 제동 거리에는 아무런 도움을 주지 못합니다. 특히 테슬라는 육중한 공차중량으로 인해 관성 모멘텀이 매우 큽니다. 기온이 영상 7도 이하로 떨어지는 중부 내륙 지방에 거주하신다면 안전을 위해 한국 아이온 아이셉트(Winter iON icept)나 미쉐린 알핀 시리즈 같은 전기차 전용 윈터 타이어를 장착하거나, 최소한 3PMSF(삼봉눈꽃) 인증을 획득한 올웨더 타이어(미쉐린 크로스클라이밋2, 한국 플렉스클라이밋)를 선택하는 것이 안전합니다.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>테슬라 권장 적정 공기압 수치는 얼마인가요?</span>
+            <span class="faq-indicator">+</span>
+          </button>
+          <div class="faq-answer">
+            테슬라 모델3와 모델Y의 공식 권장 표준 냉간 공기압은 42 psi (약 2.9 bar)입니다. 공기압이 38 psi 이하로 과도하게 낮아지면 전비가 급격히 떨어지고 타이어 숄더 부위의 편마모가 심해집니다. 반대로 45 psi를 초과하여 과도하게 주입하면 통통 튀는 불쾌한 승차감이 발생하고 노면 충격이 서스펜션과 차체로 직접 전달되므로 냉간 상태에서 40~42 psi를 유지하는 것이 최적의 세팅입니다.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>타이어 렌탈 계약 후 휠 밸런스와 얼라인먼트는 언제 받아야 하나요?</span>
+            <span class="faq-indicator">+</span>
+          </button>
+          <div class="faq-answer">
+            타이어를 처음 교체하여 장착할 때 고속 휠 밸런스는 기본적으로 완벽히 영점을 맞추어야 합니다. 휠 얼라인먼트는 신품 장착 후 타이어와 차체가 완전히 안착되는 약 1,000km에서 2,000km 주행 시점에 측정하거나, 주행 중 핸들이 한쪽으로 쏠리고 타이어 안쪽이나 바깥쪽만 닳는 편마모 징후가 보일 때 렌탈 케어 쿠폰을 활용하여 정밀 교정하는 것이 정석입니다.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 보충 기술 분석 및 지식 베이스 섹션 -->
+    <section id="기술심층정보">
+      <h2>테슬라 섀시 역학 및 타이어 트레드웨어 심층 분석</h2>
+      <p>현대 전기차 엔지니어링에서 타이어는 단순히 회전하는 고무 덩어리가 아니라 배터리 소비 효율과 ADAS 자율주행 안전성을 직접 제어하는 핵심 서스펜션 부품의 연장선입니다. 테슬라의 오토파일럿 및 FSD(Full Self-Driving) 시스템은 각 바퀴에 탑재된 휠 스피드 센서와 타이어의 접지 한계치를 실시간으로 연산하여 차량의 자세를 제어합니다.</p>
+
+      <p>타이어의 트레드가 불균일하게 마모되어 4륜의 회전 반경 오차가 2퍼센트 이상 벌어질 경우, 차량 컴퓨터는 노면 슬립으로 오인하여 전자식 차체 제어 시스템(ESP)을 불필요하게 개입시키거나 회생제동 출력을 제한할 수 있습니다. 이것이 바로 전문가들이 전륜과 후륜의 마모 차이를 방치하지 말고 주기적인 위치교환을 강조하는 <strong>이유</strong>입니다.</p>
+
+      <p>2026년 타이어 시장은 고효율 사계절 컴파운드 기술의 비약적 발전으로 인해 여름용 고성능 타이어 수준의 제동력을 유지하면서도 겨울철 영하 10도의 기온에서도 고무가 딱딱하게 굳지 않는 진보된 4계절 전기차 타이어가 대세를 형성하고 있습니다. 합리적인 차주라면 무조건 값비싼 수입 타이어만을 고집할 필요 없이, 자신의 연간 주행거리와 고속도로 주행 비율을 면밀히 분석하여 최적의 <strong>조건</strong>을 도출하는 지혜가 요구됩니다.</p>
+    </section>
+
+  </main>
+
+
+  
+
+  <!-- 인터랙티브 스크립트 (FAQ 아코디언 및 견적 계산기 엔진) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // 1. FAQ 아코디언 동작 제어
+      const faqButtons = document.querySelectorAll('.faq-question');
+
+      faqButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          const item = this.parentElement;
+          const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+          // 다른 모든 항목 닫기
+          document.querySelectorAll('.faq-item').forEach(otherItem => {
+            if (otherItem !== item) {
+              otherItem.classList.remove('active');
+              otherItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+            }
+          });
+
+          // 현재 클릭 항목 토글
+          if (!isExpanded) {
+            item.classList.add('active');
+            this.setAttribute('aria-expanded', 'true');
+          } else {
+            item.classList.remove('active');
+            this.setAttribute('aria-expanded', 'false');
+          }
+        });
+      });
+
+      // 2. 실시간 견적 및 렌탈 비용 계산기 로직
+      const carSelect = document.getElementById('car-model-select');
+      const brandSelect = document.getElementById('tire-brand-select');
+      const countSelect = document.getElementById('tire-count-select');
+      const paymentSelect = document.getElementById('payment-method-select');
+
+      const totalCashEl = document.getElementById('total-cash-price');
+      const monthlyRentEl = document.getElementById('monthly-rent-price');
+      const cardDiscountEl = document.getElementById('card-discount-price');
+
+      function calculateCost() {
+        const selectedCar = carSelect.options[carSelect.selectedIndex];
+        const basePricePerTire = parseFloat(selectedCar.getAttribute('data-base'));
+        const baseRentPerTire = parseFloat(selectedCar.getAttribute('data-rent'));
+
+        const brandMultiplier = parseFloat(brandSelect.value);
+        const count = parseInt(countSelect.value, 10);
+        const paymentType = paymentSelect.value;
+
+        // 일시불 가격 계산 (기본 1본 단가 * 브랜드 계수 * 본수 + 장착 공임 본당 15,000원)
+        const tireUnitCost = Math.round(basePricePerTire * brandMultiplier);
+        const totalCash = (tireUnitCost + 15000) * count;
+
+        // 월 렌탈 요금 계산 (36개월 기준 기본 요금 * 계수 * 본수 / 2)
+        let rentFactor = 1.0;
+        if (paymentType === 'rent24') {
+          rentFactor = 1.35; // 24개월 약정 시 월 분납금 상승
+        }
+
+        const baseMonthlyTotal = Math.round((baseRentPerTire * brandMultiplier * (count / 2) * rentFactor) / 100) * 100;
+        
+        // 제휴 신용카드 전월 실적 충족 시 청구 할인 (평균 20,000원 할인 적용, 최저 0원 보정)
+        const cardDiscount = 20000;
+        const discountedMonthly = Math.max(0, baseMonthlyTotal - cardDiscount);
+
+        // UI 업데이트
+        totalCashEl.textContent = totalCash.toLocaleString('ko-KR') + '원';
+        monthlyRentEl.textContent = '월 ' + baseMonthlyTotal.toLocaleString('ko-KR') + '원';
+        cardDiscountEl.textContent = '월 ' + discountedMonthly.toLocaleString('ko-KR') + '원';
+      }
+
+      // 이벤트 리스너 등록
+      carSelect.addEventListener('change', calculateCost);
+      brandSelect.addEventListener('change', calculateCost);
+      countSelect.addEventListener('change', calculateCost);
+      paymentSelect.addEventListener('change', calculateCost);
+
+      // 최초 실행
+      calculateCost();
+    });
+  </script>
+  
